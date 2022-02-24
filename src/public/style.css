@@ -1,0 +1,15 @@
+.petcard{
+    width: 90px;
+    height: 150px;
+}
+.petcard > img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.petContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aqua;
+}
