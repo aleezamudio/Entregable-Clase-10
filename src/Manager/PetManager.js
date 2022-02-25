@@ -14,7 +14,6 @@ class petManager{
                 return {status: "success",payload:pets}
             }catch(error){
                 return {status: "error",error:error}
-
             }
         }
     }

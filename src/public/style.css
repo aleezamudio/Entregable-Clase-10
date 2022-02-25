@@ -1,15 +1,60 @@
+h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gray;
+}
+#petForm{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: gainsboro;
+    border-radius: 3px solid gray;
+    width: 600px;
+}
+#petForm label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:right;
+}  
+#petForm input{
+    font-size: 13px;
+    width: 300px;
+    text-align:left;
+} 
+#petForm #enviar{
+    color: white;
+    background-color: green;
+    font-size: 13px;
+    width:90px;
+    margin: 10px;
+    padding: 10px;
+    text-align:center;
+}      
 .petcard{
-    width: 90px;
-    height: 150px;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 20px;
 }
 .petcard > img{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    text-align: right;
 }
 .petContainer{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: gray;
+    border-radius: 3px solid gray;
+    width: 600px;
+    height: 100%;
 }
+

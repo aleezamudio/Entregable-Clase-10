@@ -10,16 +10,25 @@
 <body>
     <h1>Creador de Mascotas</h1>
     <form id="petForm">
-        <label>NOMBRE</label>
+        <label>nombre</label>
         <input name="name">
-        <label>ESPECIE</label>
+        <br/>
+        <label>especie</label>
         <input name="specie">
-        <label>URL de la foto</label>
+        <br/>
+        <label>enviá url</label>
         <input name="thumbnail">
-
-        <input type="submit">
+        <br/>
+        <input id="enviar" type="submit">
     </form>
     <span id="petsTemplate"></span>
+    
+    <!--chat-->
+<br/>
+<div>
+    <input id="chatBox">
+</div>
+<p id="log"></p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/socket.io/socket.io.js"></script>

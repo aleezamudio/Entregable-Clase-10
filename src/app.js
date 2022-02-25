@@ -20,3 +20,17 @@ io.on('connection',async socket=>{
         io.emit('petLog',pets)
     })
 })
+
+//chatBox
+let log = [];
+io.on('connection', async socket=>{
+    socket.broadcast.emit('newUser')
+
+    socket.on('message',async data=>{
+        log.push(data);
+        io.emit('log',log);
+    })
+    socket.on('registered',data=>{
+        socket.emit('log',log);
+    })
+})
